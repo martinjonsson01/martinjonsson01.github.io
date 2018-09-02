@@ -10,15 +10,19 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <script src="js/main.js"></script>
 </head>
 
 <body>
-
+    <script src="js/main.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Montserrat', 'Roboto']
+        }
+      });
+    </script>
+    
     <div id="title_background_gradient">
         <h1 class="title">Martin Jonsson</h1>
         <h2 class="subtitle">Developer</h2>
