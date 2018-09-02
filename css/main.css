@@ -1,0 +1,50 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(39, 39, 39);
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: rgb(216, 216, 216);
+    text-align: center;
+    padding-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(210, 217, 223);
+    text-align: center;
+}
+
+#title_background_gradient {
+    background-image: linear-gradient(to bottom, rgb(86, 161, 96), rgb(0, 107, 121));
+    padding: 4em;
+}
+
+h1.title {
+    margin: 0;
+}
+
+h2.subtitle {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    padding: 2em;
+    background-color: rgb(46, 46, 46);
+    width: fit-content;
+    height: fit-content;
+}
