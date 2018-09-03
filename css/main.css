@@ -11,15 +11,12 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     color: whitesmoke;
-    text-align: center;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     color: rgb(216, 216, 216);
-    text-align: center;
-    padding-top: 20px;
 }
 
 p {
@@ -35,10 +32,26 @@ p {
 
 h1.title {
     margin: 0;
+    text-align: center;
 }
 
 h2.subtitle {
     margin: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+img {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.inline {
+    display: inline-block;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
 }
 
 .container {
