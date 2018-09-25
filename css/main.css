@@ -1,20 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Montserrat', 'Arial', sans-serif;
     background-color: rgb(39, 39, 39);
 }
 
-body {
-    margin: 0;
+.wf-loading {
+    visibility: hidden;
+}
+
+.wf-active, .wf-inactive {
+    visibility: visible;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Roboto', 'Arial', 'Georgia', serif;
     font-size: 50px;
     color: whitesmoke;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Roboto', 'Arial', 'Georgia', serif;
     font-size: 40px;
     color: rgb(216, 216, 216);
 }
@@ -22,42 +32,142 @@ h2 {
 p {
     font-size: 20px;
     color: rgb(210, 217, 223);
-    text-align: center;
+    padding: 1em;
 }
 
 #title_background_gradient {
-    background-image: linear-gradient(to bottom, rgb(86, 161, 96), rgb(0, 107, 121));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0, 107, 121);
     padding: 4em;
 }
 
-h1.title {
-    margin: 0;
-    text-align: center;
+h2.subtitle {
+    padding-top: 20px;
 }
 
-h2.subtitle {
-    margin: 0;
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav a {
+    background-image: linear-gradient(to bottom, rgb(0, 107, 121), rgb(0, 98, 110));
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: Montserrat;
+    font-size: 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    width: 100%;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to bottom, rgb(0, 107, 121), rgb(0, 176, 199));
+}
+
+a.active {
+    background-image: linear-gradient(to bottom, rgb(0, 107, 121), rgb(68, 124, 76));
+    color: rgb(206, 206, 206);
+    pointer-events: none;
 }
 
 img {
     margin: auto;
-    width: fit-content;
-    height: fit-content;
 }
 
 .inline {
-    display: inline-block;
+    float: left;
     margin: auto;
     width: fit-content;
     height: fit-content;
 }
 
+.material-icons {
+    color: #f5f5f5;
+    font-size: 100px;
+}
+
 .container {
-    margin: auto;
-    padding: 2em;
+    display: flex;
+    align-self: center;
+    margin: 2em;
+    padding: 1em;
     background-color: rgb(46, 46, 46);
     width: fit-content;
     height: fit-content;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* For mobile phones */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    background-color: rgb(46, 46, 46);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+article header {
+    display: flex;
+    align-items: center;
+}
+
+article header img {
+    width: 3em;
+    height: 3em;
+    margin: 1em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    article {
+        max-width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    article {
+        max-width: 75%;
+    }
+    nav {
+        flex-direction: row;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    article {
+        max-width: 60%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    article {
+        max-width: 45%;
+    }
 }
